@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASE_URL = "http://localhost:3001"; // Backend URL
+const BASE_URL = "https://dashboard.render.com/web/srv-d0obvugdl3ps73du6ag0"; // Backend URL
 
 const storeToken = (token) => {
     if (token) {
