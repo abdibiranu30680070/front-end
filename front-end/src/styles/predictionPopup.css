@@ -1,0 +1,101 @@
+.popup-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+}
+
+.popup-content {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  width: 90%;
+  max-width: 600px; /* Increased from 400px */
+  min-height: 400px; /* Added minimum height */
+  position: relative;
+  margin: 20px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Countdown timer */
+.countdown-timer {
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  background: #ffffff;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+  font-size: 1.2rem;
+}
+
+/* Prediction Circle */
+.prediction-circle {
+  margin: 25px 0;
+}
+
+.percentage-circle {
+  border: 5px solid #007bff;
+  border-radius: 50%;
+  width: 150px; /* Increased from 120px */
+  height: 150px; /* Increased from 120px */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  background: #f8f9fa;
+  transition: transform 0.3s ease;
+}
+
+.percentage-circle:hover {
+  transform: scale(1.05);
+}
+
+.percentage-circle span {
+  font-size: 28px; /* Increased from 24px */
+  font-weight: 700;
+  color: #2c3e50;
+}
+
+/* Recommendation Section */
+.recommendation-section {
+  margin: 1.5rem auto;
+  padding: 1.5rem;
+  background-color: #f8f9fa;
+  border-radius: 12px;
+  max-width: 500px; /* Increased from 320px */
+  width: 90%;
+}
+
+.recommendation-section h4 {
+  font-size: 1.2rem; /* Increased from 1.1rem */
+  margin-bottom: 1rem;
+}
+
+.recommendation-section p {
+  font-size: 1rem; /* Increased from 0.95rem */
+  line-height: 1.6;
+}
+
+/* Close Button */
+.close-button {
+  padding: 1rem 2.5rem; /* Increased padding */
+  font-size: 1.1rem; /* Increased font size */
+  border-radius: 30px;
+  margin-top: 20px;
+}
